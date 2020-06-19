@@ -356,7 +356,7 @@ template {
   display: flex;
   top: 0;
   left: 0;
-  width: 240px;
+  width: 210px;
   height: 100vh;
   color: #ffffff;
   background-color: #191919;
@@ -371,7 +371,7 @@ template {
 }
 
 .navigation_menu .nav_logo .logo {
-  font-size: 100px;
+  font-size: 86px;
   color: #ffffff;
   position: absolute;
   left: 20px;
@@ -380,7 +380,7 @@ template {
 
 .navigation_menu .nav_logo .hamburger {
   display: inline-block;
-  line-height: 20px;
+  line-height: 16px;
   padding: 3px;
   font-size: 22px;
   position: absolute;
@@ -391,14 +391,15 @@ template {
 
 .navigation_menu .nav_wrapper ul {
   list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-  border-bottom: solid 2px #ffa200;
+  padding: 0 0 20px 0;
+  margin: 0 0 10px 0;
+  border-bottom: solid 1px #979797;
 }
 
 .navigation_menu .nav_wrapper li {
   padding-left: 5px;
   background-color: #191919;
+  overflow: hidden;
 }
 
 .navigation_menu .nav_wrapper li:hover {
@@ -407,8 +408,9 @@ template {
 
 .navigation_menu .nav_wrapper a {
   display: inline-block;
-  font-size: 16px;
-  padding: 16px 20px;
+  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial;
+  padding: 12px;
   height: 100%;
   width: 100%;
   color: #979797;
@@ -421,7 +423,16 @@ template {
 }
 
 .navigation_menu .nav_wrapper i {
-  margin-right: 20px;
+  margin-right: 35px;
+}
+
+.navigation_menu .nav_wrapper span {
+  display: inline-block;
+}
+
+.navigation_menu .nav_wrapper ul li {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .navigation_menu .nav_manager {
@@ -440,7 +451,10 @@ template {
 .navigation_menu .nav_manager h4 {
   text-transform: uppercase;
   justify-self: stretch;
-  margin: 20px 0;
+  margin: 10px 0;
+  color: #979797;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 15px;
 }
 
 .navigation_menu .nav_manager a {
@@ -450,13 +464,16 @@ template {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  color: #80bfca;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 14px;
 }
 
 .navigation_menu .nav_manager a .manager_img {
   margin-right: 10px;
   border-radius: 50%;
   max-width: 100%;
-  width: 60px;
+  width: 45px;
 }
 
 /* Sections */
