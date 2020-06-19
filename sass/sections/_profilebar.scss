@@ -1,0 +1,48 @@
+.prof_bar {
+  background-color: $light-color;
+  margin-left: 240px;
+  width: calc(100% - #{240px});
+  min-height: 50px;
+  font-size: 1,3em;
+
+  ul {
+    list-style: none;
+    float: right;
+
+    li {
+      float: left;
+      border-style: solid;
+      border-width: 0 0 0 2px;
+      border-color: $disabled-color;
+    }
+  }
+
+  .wallet {
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .profile {
+    span {
+      display: inline-block;
+      font-size: 0,7em;
+      font-weight: 600;
+      color: $link-color;
+      line-height: 20px;
+      height: 20px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    color: $header-color;
+    padding: 10px;
+    line-height: 30px;
+
+    span {
+      margin: 0 10px;
+    }
+  }
+
+}

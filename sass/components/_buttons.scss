@@ -1,0 +1,39 @@
+a.btn {
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  user-select: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-disabled {
+  background-color: $disabled-color;
+  pointer-events: none;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+
+  &:hover {
+    background-color: $secondary-color-active;
+  }
+}
+
+.btn-warning {
+  background-color: $main-color;
+
+  &:hover {
+    background-color: $main-color-active;
+  }
+}
+
+

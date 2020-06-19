@@ -350,6 +350,48 @@ template {
 }
 
 /* Components */
+a.btn {
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-disabled {
+  background-color: #e3e3e3;
+  pointer-events: none;
+}
+
+.btn-secondary {
+  background-color: #979797;
+}
+
+.btn-secondary:hover {
+  background-color: #bababa;
+}
+
+.btn-warning {
+  background-color: #f58220;
+}
+
+.btn-warning:hover {
+  background-color: #ffa200;
+}
+
+/* Sections */
 .navigation_menu {
   position: fixed;
   display: -ms-flexbox;
@@ -476,6 +518,49 @@ template {
   width: 45px;
 }
 
-/* Sections */
+.prof_bar {
+  background-color: #ffffff;
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  min-height: 50px;
+  font-size: 1,3em;
+}
+
+.prof_bar ul {
+  list-style: none;
+  float: right;
+}
+
+.prof_bar ul li {
+  float: left;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  border-color: #e3e3e3;
+}
+
+.prof_bar .wallet span {
+  font-weight: 600;
+}
+
+.prof_bar .profile span {
+  display: inline-block;
+  font-size: 0,7em;
+  font-weight: 600;
+  color: #56819f;
+  line-height: 20px;
+  height: 20px;
+}
+
+.prof_bar a {
+  display: inline-block;
+  color: #a6a6a6;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.prof_bar a span {
+  margin: 0 10px;
+}
+
 /* Pages / Views */
 /*# sourceMappingURL=style.css.map */
