@@ -6,6 +6,10 @@
 /*Status*/
 /*** Font sizes ***/
 /*** Fonts ***/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -346,6 +350,115 @@ template {
 }
 
 /* Components */
+.navigation_menu {
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  color: #ffffff;
+  background-color: #191919;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.navigation_menu .nav_logo {
+  position: relative;
+  overflow: hidden;
+  height: 75px;
+}
+
+.navigation_menu .nav_logo .logo {
+  font-size: 100px;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
+  top: -12px;
+}
+
+.navigation_menu .nav_logo .hamburger {
+  display: inline-block;
+  line-height: 20px;
+  padding: 3px;
+  font-size: 22px;
+  position: absolute;
+  color: #979797;
+  right: 18px;
+  top: 23px;
+}
+
+.navigation_menu .nav_wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: solid 2px #ffa200;
+}
+
+.navigation_menu .nav_wrapper li {
+  padding-left: 5px;
+  background-color: #191919;
+}
+
+.navigation_menu .nav_wrapper li:hover {
+  background-color: #f58220;
+}
+
+.navigation_menu .nav_wrapper a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 16px 20px;
+  height: 100%;
+  width: 100%;
+  color: #979797;
+  background-color: #191919;
+}
+
+.navigation_menu .nav_wrapper a:hover {
+  color: #ffffff;
+  background-color: #303030;
+}
+
+.navigation_menu .nav_wrapper i {
+  margin-right: 20px;
+}
+
+.navigation_menu .nav_manager {
+  padding: 0 15px;
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navigation_menu .nav_manager h4 {
+  text-transform: uppercase;
+  justify-self: stretch;
+  margin: 20px 0;
+}
+
+.navigation_menu .nav_manager a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.navigation_menu .nav_manager a .manager_img {
+  margin-right: 10px;
+  border-radius: 50%;
+  max-width: 100%;
+  width: 60px;
+}
+
 /* Sections */
 /* Pages / Views */
 /*# sourceMappingURL=style.css.map */
