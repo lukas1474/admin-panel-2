@@ -1,0 +1,27 @@
+.gen_stat {
+  display: flex;
+  background-color: $light-color;
+  margin: 20px;
+  margin-left: calc (#{240px} + #{20px});
+  flex-wrap: wrap;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .header {
+    justify-self: stretch;
+  }
+
+  .date_section {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    border-bottom: solid 1px $disabled-color;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
