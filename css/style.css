@@ -617,5 +617,64 @@ a.btn {
   max-width: 100%;
 }
 
+.date_numbers {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.date_numbers .date-number {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 10px 30px;
+  border-bottom: solid 1px #e3e3e3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.date_numbers .date-number span:first-of-type {
+  font-weight: bold;
+}
+
+.date_numbers .date-number span:last-of-type {
+  color: #333333;
+}
+
+.links {
+  padding: 30px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.links .link {
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  padding: 20px;
+  border-bottom: solid 1px #e3e3e3;
+  -ms-flex-pack: stretch;
+      justify-content: stretch;
+}
+
+.links .link span {
+  text-align: left;
+}
+
+.links .link a {
+  text-align: left;
+}
+
 /* Pages / Views */
 /*# sourceMappingURL=style.css.map */

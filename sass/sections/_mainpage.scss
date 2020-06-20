@@ -25,3 +25,58 @@
     max-width: 100%;
   }
 }
+
+.date_numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .date-number {
+    flex-basis: 20%;
+    margin: 10px 30px;
+    border-bottom: solid 1px $disabled-color;
+    display: flex;
+    justify-content: space-between;
+
+    span:first-of-type {
+      font-weight: bold;
+    }
+
+    span:last-of-type {
+      color: $text-color;
+    }
+  }
+}
+
+// .gen-stat-img {
+//   max-width: 100%;
+//   width: 50%;
+// }
+
+
+.links {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .link {
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: solid 1px $disabled-color;
+    justify-content: stretch;
+
+    span {
+      text-align: left;
+    }
+
+    a {
+      text-align: left;
+    }
+  }
+
+
+}
