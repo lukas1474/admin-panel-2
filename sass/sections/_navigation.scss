@@ -7,8 +7,9 @@
   height: 100vh;
   color: #ffffff;
   background-color: $dark-color;
-  padding: 10px 0;
-  z-index: 10;
+  flex-direction: column;
+  // padding: 10px 0;
+  // z-index: 10;
 
   .nav_logo {
     position: relative;
@@ -40,7 +41,7 @@
     ul {
       list-style: none;
       padding: 0 0 20px 0;
-      margin: 0 0 10px 0;
+      //margin: 0 0 10px 0;
       border-bottom: solid 1px $secondary-color;
     }
 
@@ -59,11 +60,12 @@
       display: inline-block;
       font-size: 15px;
       font-family: $brand-font;
-      padding: 12px;
+      padding: 16px 20px;
       height: 100%;
       width: 100%;
       color: $secondary-color;
       background-color: $dark-color;
+      flex-wrap: nowrap;
 
       &:hover {
         color: $light-color;
@@ -73,7 +75,7 @@
     }
 
     i {
-      margin-right: 35px;
+      margin-right: 25px;
     }
 
     span {
