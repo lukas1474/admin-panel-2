@@ -1,14 +1,11 @@
 .gen_stat {
-  box-shadow: 0 0 15px 1px $disabled-color;
+  box-shadow: 0 0 5px 1px $disabled-color;
   margin-left: 240px;
-  //width: calc(100% - #{240px});
   max-width: 86%;
   margin-top: 30px;
-
-
 }
 
-.header {
+.header_gen_stat {
   width: 100%;
   justify-self: stretch;
   padding: 20px;
@@ -25,14 +22,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: $light-color;
-  // margin: 20px;
-  // margin-left: calc (#{240px} + #{20px});
-  // margin-left: 500px;
-  // padding-left: 500px;
-  // margin-right: 100px;
   flex-wrap: wrap;
-  margin: 50px 0 50px 0;
+  padding: 30px 0 30px 0;
+  margin-bottom: 30px;
+  border-bottom: solid 1px $disabled-color;
 
   .input_date_section {
     display: flex;
@@ -46,12 +39,13 @@ h3 {
     .input-date {
       display: flex;
       flex: 5 0 0%;
-      line-height: 30px;
+      line-height: 20px;
       padding: 5px;
       margin: 5px;
       font-family: $brand-font;
       color: $header-color;
       border-style: none;
+      border-radius: 0;
 
       &:first-of-type {
         border-right: solid 1px $disabled-color;
@@ -72,26 +66,6 @@ h3 {
     margin: 10px;
     flex-basis: 5px;
   }
-
-  // h3 {
-  //   text-transform: uppercase;
-  // }
-
-  // .header {
-  //   justify-self: stretch;
-  // }
-
-  // .date_section {
-  //   padding: 20px;
-  //   display: flex;
-  //   width: 100%;
-  //   border-bottom: solid 1px $disabled-color;
-  //   justify-content: center;
-  // }
-
-  // img {
-  //   max-width: 100%;
-  // }
 }
 
 .gen-stat-img {
@@ -101,7 +75,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .date_numbers {
@@ -116,7 +89,6 @@ h3 {
     border-bottom: solid 1px $disabled-color;
     display: flex;
     justify-content: space-between;
-
 
     span {
       display: flex;
@@ -136,44 +108,70 @@ h3 {
         justify-content: flex-end;
         flex: 0 0 20%;
       }
-
     }
 
     .date-number-span {
       color: black;
     }
-
   }
-
-
-
 }
 
-
-
 .links {
-  padding: 30px;
+  //padding: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 5px 1px $disabled-color;
+  margin-left: 240px;
+  max-width: 86%;
+  margin-top: 30px;
 
-  .link {
+  .links_section {
+    width: 100%;
     display: flex;
-    width: 60%;
-    justify-content: flex-start;
-    padding: 20px;
-    border-bottom: solid 1px $disabled-color;
-    justify-content: stretch;
+    flex-direction: column;
+    align-items: center;
 
     span {
-      text-align: left;
-    }
-
-    a {
-      text-align: left;
+      padding: 5px;
+      font-family: $brand-font;
+      color: $header-color;
     }
   }
 
+  .link {
+    display: flex;
+    width: 75%;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: solid 1px $disabled-color;
+  }
 
+  .links_buttom {
+    display: flex;
+    width: 75%;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: solid 1px $disabled-color;
+
+    &:first-of-type .btn, &:last-of-type .btn {
+      flex: unset;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    &:last-of-type {
+      margin-top: 10px;
+      border-bottom: unset;
+    }
+  }
+}
+
+.header_links {
+  width: 100%;
+  justify-self: stretch;
+  padding: 20px;
+  margin: 0;
+  border-bottom: solid 1px $disabled-color;
 }
