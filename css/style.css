@@ -535,8 +535,6 @@ a.btn {
 
 .prof_bar {
   background-color: #ffffff;
-  margin-left: 240px;
-  width: calc(100% - 240px);
   font-size: 1,3em;
   display: -ms-flexbox;
   display: flex;
@@ -544,6 +542,7 @@ a.btn {
       flex-wrap: wrap;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  box-shadow: 0 0 15px 1px #e3e3e3;
 }
 
 .prof_bar i {
@@ -587,35 +586,98 @@ a.btn {
 }
 
 .gen_stat {
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #ffffff;
-  margin: 20px;
-  margin-left: calc 240px + 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  box-shadow: 0 0 15px 1px #e3e3e3;
+  margin-left: 240px;
+  max-width: 86%;
+  margin-top: 30px;
 }
 
-.gen_stat h3 {
-  text-transform: uppercase;
-}
-
-.gen_stat .header {
-  justify-self: stretch;
-}
-
-.gen_stat .date_section {
-  padding: 20px;
-  display: -ms-flexbox;
-  display: flex;
+.header {
   width: 100%;
+  justify-self: stretch;
+  padding: 20px;
   border-bottom: solid 1px #e3e3e3;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #a6a6a6;
+}
+
+.input_section {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0 50px 0;
 }
 
-.gen_stat img {
-  max-width: 100%;
+.input_section .input_date_section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: stretch;
+      justify-content: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
+  border-radius: 5px;
+  border: solid 1px #e3e3e3;
+}
+
+.input_section .input_date_section .input-date {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 5 0 0%;
+      flex: 5 0 0%;
+  line-height: 30px;
+  padding: 5px;
+  margin: 5px;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #a6a6a6;
+  border-style: none;
+}
+
+.input_section .input_date_section .input-date:first-of-type {
+  border-right: solid 1px #e3e3e3;
+  margin-right: -2px;
+}
+
+.input_section .input_date_section .input-date i {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex: 1 0 10%;
+      flex: 1 0 10%;
+  margin-right: 10px;
+}
+
+.input_section .input_date_btn {
+  margin: 10px;
+  -ms-flex-preferred-size: 5px;
+      flex-basis: 5px;
+}
+
+.gen-stat-img {
+  margin-top: 50px;
+  margin-left: 450px;
+  padding-bottom: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .date_numbers {
@@ -625,6 +687,7 @@ a.btn {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
+  border-bottom: unset;
 }
 
 .date_numbers .date-number {
@@ -638,12 +701,33 @@ a.btn {
       justify-content: space-between;
 }
 
-.date_numbers .date-number span:first-of-type {
-  font-weight: bold;
+.date_numbers .date-number span {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  white-space: nowrap;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #a6a6a6;
 }
 
-.date_numbers .date-number span:last-of-type {
+.date_numbers .date-number span span:first-of-type {
+  font-weight: bold;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+}
+
+.date_numbers .date-number span span:last-of-type {
   color: #333333;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+}
+
+.date_numbers .date-number .date-number-span {
+  color: black;
 }
 
 .links {
