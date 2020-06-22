@@ -532,7 +532,6 @@ a.btn {
 
 .navigation_menu .nav_manager a .manager_img {
   margin-right: 10px;
-  border-radius: 50%;
   max-width: 100%;
   width: 45px;
 }
@@ -565,6 +564,10 @@ a.btn {
 
 .prof_bar ul li {
   border-left: solid 1px #e3e3e3;
+}
+
+.prof_bar ul li:hover {
+  background-color: #f1f3f3;
 }
 
 .prof_bar ul li a {
@@ -601,7 +604,7 @@ a.btn {
   box-shadow: 0 0 5px 1px #e3e3e3;
   margin-left: 240px;
   max-width: 86%;
-  margin-top: 100px;
+  margin-top: 90px;
   background-color: white;
 }
 
@@ -756,7 +759,7 @@ h3 {
   margin-left: 240px;
   max-width: 86%;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   background-color: white;
 }
 
