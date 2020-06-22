@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #f1f3f3;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -480,7 +484,7 @@ a.btn {
 }
 
 .navigation_menu .nav_wrapper i {
-  margin-right: 25px;
+  min-width: 35px;
 }
 
 .navigation_menu .nav_wrapper span {
@@ -543,6 +547,10 @@ a.btn {
   -ms-flex-pack: end;
       justify-content: flex-end;
   box-shadow: 0 0 5px 1px #e3e3e3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .prof_bar i {
@@ -557,6 +565,10 @@ a.btn {
 
 .prof_bar ul li {
   border-left: solid 1px #e3e3e3;
+}
+
+.prof_bar ul li a {
+  text-decoration: none;
 }
 
 .prof_bar .wallet span {
@@ -589,7 +601,8 @@ a.btn {
   box-shadow: 0 0 5px 1px #e3e3e3;
   margin-left: 240px;
   max-width: 86%;
-  margin-top: 30px;
+  margin-top: 100px;
+  background-color: white;
 }
 
 .header_gen_stat {
@@ -739,12 +752,12 @@ h3 {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   box-shadow: 0 0 5px 1px #e3e3e3;
   margin-left: 240px;
   max-width: 86%;
   margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
 }
 
 .links .links_section {
@@ -757,20 +770,85 @@ h3 {
       align-items: center;
 }
 
-.links .links_section span {
+.links .links_section .link {
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px #e3e3e3;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+}
+
+.links .links_section .link:hover {
+  background-color: #f1f3f3;
+}
+
+.links .links_section .link:hover span:nth-child(3) a {
+  opacity: 1;
+}
+
+.links .links_section .link:hover span:nth-child(3) a i {
+  font-weight: bold;
+}
+
+.links .links_section .link:hover span:nth-child(3) a .link-icons-links {
+  color: #ffb638;
+}
+
+.links .links_section .link span {
   padding: 5px;
   font-family: "Open Sans", Helvetica, Arial;
   color: #a6a6a6;
 }
 
-.links .link {
+.links .links_section .link span:first-child {
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
+  -ms-flex: 0 0 0 40%;
+      flex: 0 0 0 40%;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  padding: 20px;
-  border-bottom: solid 1px #e3e3e3;
+  white-space: nowrap;
+  font-weight: bold;
+  max-width: 0px;
+}
+
+.links .links_section .link span:nth-child(2) {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links .links_section .link span:nth-child(2) a {
+  text-decoration: none;
+  color: #56819f;
+}
+
+.links .links_section .link span:nth-child(2) a:hover {
+  color: #ffa200;
+}
+
+.links .links_section .link span:nth-child(3) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 0 4%;
+      flex: 0 0 4%;
+}
+
+.links .links_section .link span:nth-child(3) a {
+  opacity: 0;
+}
+
+.links .links_section .link span:nth-child(3) .link-icon-links {
+  color: #ffa200;
+  margin-right: 20px;
+}
+
+.links .links_section .link span:nth-child(3) .link-icon-trash {
+  color: #191919;
 }
 
 .links .links_buttom {
