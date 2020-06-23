@@ -806,6 +806,8 @@ h3 {
   padding: 5px;
   font-family: "Open Sans", Helvetica, Arial;
   color: #a6a6a6;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .links .links_section .link span:first-child {
@@ -817,7 +819,6 @@ h3 {
       justify-content: flex-start;
   white-space: nowrap;
   font-weight: bold;
-  max-width: 0px;
 }
 
 .links .links_section .link span:nth-child(2) {
